@@ -96,6 +96,22 @@ ul li a {
     margin-bottom: 16px;
 }
 
+/* Sponsor Section */
+#sponsor {
+    max-width: 80%;
+    margin: 60px auto;
+    padding: 40px;
+    border-top: 1px solid rgba(58, 58, 58, 0.1);
+    border-bottom: 1px solid rgba(58, 58, 58, 0.1);
+}
+
+.sponsor-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 60px;
+    align-items: center;
+}
+
 
 
 /* Responsive Design */
@@ -103,6 +119,7 @@ ul li a {
 /* Responsive for Mobile */
 
 @media screen and (max-width:576px) {
+    /* header section */
     nav, ul {
         flex-direction: column;
         gap: 20px;
@@ -120,5 +137,15 @@ ul li a {
     }
     .banner-title {
         font-size: 2rem;
+    }
+    /* sponsor section */
+    #sponsor {
+        border: none;
+    }
+    .sponsor-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .sponsor-container img {
+        width: 200%;
     }
 }
