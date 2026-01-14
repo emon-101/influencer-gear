@@ -10,7 +10,22 @@
 }
 
 /* Shared Styles */
+.btn-primary {
+    color: white;
+    background-color: rgba(224, 44, 109, 1);
+    padding: 10px 24px;
+    border: none;
+    border-radius: 41px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
+.btn-primary:hover {
+    background-color: gray;
+    transform: scale(1.1);
+}
 
 /* Header Section */
 header {
@@ -44,6 +59,43 @@ ul li a {
     font-weight: 500;
 }
 
+/* Banner Section */
+
+#banner {
+    margin-top: 60px;
+}
+
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-content, .banner-img {
+    width: 40%;
+}
+
+.banner-img img {
+    transform: scale(0.9);
+}
+.banner-img {
+    background: url("./images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.banner-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.banner-content p {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
 
 
 /* Responsive Design */
@@ -54,5 +106,19 @@ ul li a {
     nav, ul {
         flex-direction: column;
         gap: 20px;
+    }
+    .banner-container {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .banner-content, .banner-img {
+        width: 100%;
+    }
+
+    .banner-img img {
+        width: 100%;
+    }
+    .banner-title {
+        font-size: 2rem;
     }
 }
