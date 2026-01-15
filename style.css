@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    color: rgba(58, 58, 58, 1);
 }
 
 /* Shared Styles */
@@ -17,9 +18,6 @@
     border: none;
     border-radius: 41px;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
 .btn-primary:hover {
@@ -29,7 +27,6 @@
 
 /* Header Section */
 header {
-    color: rgba(58, 58, 58, 1);
     max-width: 90%;
     margin: 60px auto;
 }
@@ -112,6 +109,91 @@ ul li a {
     align-items: center;
 }
 
+/* Card Section */
+.section-title {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 30px 0;
+    text-align: center;
+}
+#card-section {
+    max-width: 70%;
+    margin: 60px auto;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card {
+    padding: 17px 14px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+.card p {
+    color: rgba(94, 99, 102, 1);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.card h3 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+.card h4 {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.ratings {
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem;
+}
+
+.ratings i {
+    color: gold;
+}
+
+.ratings p {
+    margin-left: 15px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.card-btn, .card-btn i {
+    color: rgba(224, 44, 109, 1);
+}
+.card-btn {
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.card-btn:hover {
+    transform: scale(1.1);
+}
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 50px 0;
+}
+
+
 
 
 /* Responsive Design */
@@ -130,6 +212,7 @@ ul li a {
     }
     .banner-content, .banner-img {
         width: 100%;
+        text-align: center;
     }
 
     .banner-img img {
@@ -147,5 +230,13 @@ ul li a {
     }
     .sponsor-container img {
         width: 200%;
+    }
+
+    /* Card Section */
+    #card-section {
+        max-width: 90%;
+    }
+    .card-container {
+        grid-template-columns: 1fr;
     }
 }
